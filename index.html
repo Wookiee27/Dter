@@ -19,10 +19,6 @@ $(document).ready(function()
       $('html, body').stop().animate({ scrollTop: $('#Layer1').offset().top }, 600, 'linear');
    });
    $("#PanelMenu1").panel({animate: false, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right', toggle: true});
-   $("#PanelMenu1_markup ul li a").click(function(event)
-   {
-       $.panel.hide($("#PanelMenu1_panel"));
-   });
 });
 </script>
 </head>
@@ -31,6 +27,22 @@ $(document).ready(function()
 </div>
 <div id="Layer1">
 <div id="Layer1_Container">
+<div id="wb_PanelMenu1">
+<a href="#PanelMenu1_markup" id="PanelMenu1">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</a>
+<div id="PanelMenu1_markup">
+<div id="PanelMenu1-logo"><img alt="" src="images/w.png"></div>
+<ul role="menu">
+<li role="menuitem"><a href="./index.html" class="nav-link">Home</a></li>
+<li role="menuitem"><a href="./About.html" class="nav-link">About</a></li>
+<li role="menuitem"><a href="./Artworks.html" class="nav-link">Artworks</a></li>
+<li role="menuitem"><a href="./Contact.html" class="nav-link">Contact</a></li>
+</ul>
+</div>
+</div>
 <div id="wb_Text1">
 <span style="color:#303030;font-family:Impact;font-size:43px;">D-Arts</span></div>
 <div id="wb_Image1">
@@ -59,28 +71,12 @@ $(document).ready(function()
 </li>
 </ul>
 </div>
-<div id="wb_PanelMenu1">
-<a href="#PanelMenu1_markup" id="PanelMenu1">
-<span class="line"></span>
-<span class="line"></span>
-<span class="line"></span>
-</a>
-<div id="PanelMenu1_markup">
-<div id="PanelMenu1-logo"><img alt="" src="images/w.png"></div>
-<ul role="menu">
-<li role="menuitem"><a href="./index.html" class="nav-link">Home</a></li>
-<li role="menuitem"><a href="./About.html" class="nav-link">About</a></li>
-<li role="menuitem"><a href="./Artworks.html" class="nav-link">Artworks</a></li>
-<li role="menuitem"><a href="./Contact.html" class="nav-link">Contact</a></li>
-</ul>
-</div>
-</div>
 </div>
 </div>
 <div id="Layer2">
 <div id="Layer2_Container">
 <div id="wb_Text2">
-<span style="color:#FFFFFF;font-family:'Bernard MT Condensed';font-size:139px;">D ARTS</span></div>
+<span style="color:#FFFFFF;font-family:'Bernard MT Condensed';font-size:107px;">D ARTS</span></div>
 <div id="wb_Text3">
 <span style="color:#FFFFFF;font-family:Tahoma;font-size:32px;">&quot;Where Creativity Comes Alive: Explore the World of Arts&quot;</span></div>
 <div id="wb_Text4">
